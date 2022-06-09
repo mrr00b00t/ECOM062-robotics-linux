@@ -4,7 +4,7 @@
 
 Regras dos Parâmetros DH | Eixos SCARA
 :---------------------------:|:-------------------------:
-![](eixos-scara.png)  |  ![](regras.png)
+![](images/eixos-scara.png)  |  ![](images/regras.png)
 
 ### Constantes do problema:
 
@@ -15,7 +15,7 @@ Regras dos Parâmetros DH | Eixos SCARA
 
 1. A tabela de parâmetros DH
 
-    ![](dh-parameters.jpg)
+    ![](images/dh-parameters.jpg)
 
     No código, foi adicionado mais uma junta de revolução na origem com o parâmetro $d = d_{offset} = 0.1 m$ para não ter que fazer uma translação no eixo $y$ na fkine do DHRobot.
 
@@ -95,35 +95,35 @@ Regras dos Parâmetros DH | Eixos SCARA
 
 3. Código da função de cinemática direta fkine
 
-    ![](fkine-diy.jpg)
+    ![](images/fkine-diy.jpg)
 
 4. Print do objeto SerialLink gerado na robotics toolbox
 
-    ![](print-scara-rtb.jpg)
+    ![](images/print-scara-rtb.jpg)
 
 5. Comparação do resultado da função fkine implementada e a função fkine dentro do objeto SerialLink gerado para as seguintes configurações:
    1. $\theta_1 = 0$; $\theta_2 = 0$; $\theta_3 = 0$; $^{4}d = 0$
 
-        ![](5a.jpg)
+        ![](images/5a.jpg)
 
    2. $\theta_1 = \frac{\pi}{2}$; $\theta_2 = -\frac{\pi}{2}$; $\theta_3 = 0$; $^{4}d = 0$
 
-        ![](5b.jpg)
+        ![](images/5b.jpg)
 
    3. $\theta_1 = \frac{\pi}{2}$; $\theta_2 = -\frac{\pi}{2}$; $\theta_3 = 0$; $^{4}d = 0.05$
 
-        ![](5c.jpg)
+        ![](images/5c.jpg)
 
    4. Enviar comandos para o CoppeliaSIM
 
         Primeiro comando $\theta_1 = 0$; $\theta_2 = 0$; $\theta_3 = 0$; $^{4}d = 0$:
 
-        ![](coppeliaSim-pos1.jpg)
+        ![](images/coppeliaSim-pos1.jpg)
 
         Segundo comando $\theta_1 = \frac{\pi}{2}$; $\theta_2 = -\frac{\pi}{2}$; $\theta_3 = 0$; $^{4}d = 0$:
 
-        ![](coppeliaSim-pos2.jpg)
+        ![](images/coppeliaSim-pos2.jpg)
 
         Terceiro comando $\theta_1 = \frac{\pi}{2}$; $\theta_2 = -\frac{\pi}{2}$; $\theta_3 = 0$; $^{4}d = 0.05$:
 
-        ![](coppeliaSim-pos3.jpg)
+        ![](images/coppeliaSim-pos3.jpg)
