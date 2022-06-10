@@ -101,13 +101,14 @@ if clientID != -1:
     time.sleep(2)
     
     args = [
-        [0, 0, 0, 0],
-        [np.pi/2, -np.pi/2, 0, 0],
-        [np.pi/2, -np.pi/2, 0.05, 0],
+        [0, 0, 0, 0], # comandos atv2.py
+        [np.pi/2, -np.pi/2, 0, 0], # comandos atv2.py
+        [np.pi/2, -np.pi/2, 0.05, 0], # comandos atv2.py
+        [-0.2043048091038573, 2.6823344700137253, 0.1, 3.141592653589793], # saída atv3.py
     ]
     
     counter = 0
-    while(counter <= 100):
+    while(counter <= 130):
         counter += 1
         
         error1, (xd, yd, zd) = sim.simxGetObjectPosition(clientID, dummy, -1, sim.simx_opmode_buffer)
