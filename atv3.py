@@ -16,6 +16,7 @@ def ikine(qr):
     
     if not flag1 or not flag2:
         print(f'Posição {qr} não alcançável!')
+        return
     
     d = do - z
     D = (x**2 + y**2 - l1**2 - l2**2) / (2*l1*l2)
